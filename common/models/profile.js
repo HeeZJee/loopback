@@ -21,6 +21,6 @@ module.exports = function(Profile) {
         console.log(user);
         next()
     })
-
+    
 };
 

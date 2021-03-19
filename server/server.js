@@ -34,7 +34,7 @@ boot(app, __dirname, function (err) {
 
 // console.log("server",Object.keys(app.models.User))
 
-app.models.User.afterRemote("create", (ctx, user, cb) => {
+app.models.user.afterRemote("create", (ctx, user, cb) => {
   console.log("New User \n", user);
   app.models.Profile.create(
     {
