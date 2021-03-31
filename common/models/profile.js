@@ -20,7 +20,7 @@ module.exports = function(Profile) {
     Profile.afterRemote('create',(ctx,user,next)=>{
         console.log(user);
         next()
-    })
+    }) 
     
 };
 

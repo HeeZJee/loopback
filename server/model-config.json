@@ -33,15 +33,15 @@
     "public": false
   },
   "Profile": {
-    "dataSource": "db",
+    "dataSource": "mongodb",
     "public": true
   },
   "user": {
-    "dataSource": "db",
+    "dataSource": "mongodb",
     "public": true
   },
   "CustomAccessToken": {
-    "dataSource": "db",
+    "dataSource": "mongodb",
     "public": true
   }
 }
