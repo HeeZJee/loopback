@@ -3,11 +3,12 @@ const app = require('./server.js')
 
 app.models.Profile.create(
     {
+        username:"asadAli",
         firstName: "Asad",
         lastName: "Ali",
         age: 22,
         birthDate: "1998-03-19T15:19:13.057Z",
-        createdAt: new Date(),
+        createdAt: new Date().toUTCString(),
     },
     (err, result) => {
         err ? console.warn("Error:", err) : console.log("Result:", result)

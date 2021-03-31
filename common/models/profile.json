@@ -6,6 +6,11 @@
     "validateUpsert": true
   },
   "properties": {
+    "username": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
     "firstName": {
       "type": "string",
       "required": true
@@ -20,9 +25,7 @@
       "type": "date"
     },
     "history": {
-      "type": [
-        "object"
-      ]
+      "type": ["object"]
     },
     "createdAt": {
       "type": "date",
