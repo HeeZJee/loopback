@@ -1,35 +1,24 @@
 {
-  "name": "Profile",
+  "name": "Post",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "username": {
-      "type": "string",
-      "required": true,
-      "unique": true
-    },
-    "firstName": {
+    "title": {
       "type": "string",
       "required": true
     },
-    "lastName": {
-      "type": "string"
+    "slug": {
+      "type": "string",
+      "required": true
     },
-    "age": {
-      "type": "number"
+    "content": {
+      "type": "string",
+      "required": true
     },
-    "birthDate": {
-      "type": "date"
-    },
-    "history": {
-      "type": [
-        "object"
-      ]
-    },
-    "createdAt": {
+    "created_at": {
       "type": "date",
       "required": true
     }
@@ -41,10 +30,10 @@
       "model": "user",
       "foreignKey": "userId"
     },
-    "Post": {
-      "type": "hasMany",
-      "model": "Post",
-      "foreignKey": ""
+    "Profile": {
+      "type": "belongsTo",
+      "model": "Profile",
+      "foreignKey": "profileId"
     }
   },
   "acls": [],

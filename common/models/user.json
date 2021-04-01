@@ -22,7 +22,12 @@
       "model": "Profile",
       "foreignKey": ""
     },
-    "AccessTokens":{
+    "Post": {
+      "type": "hasMany",
+      "model": "Post",
+      "foreignKey": ""
+    },
+    "AccessTokens": {
       "type": "hasMany",
       "model": "CustomAccessToken",
       "foreignKey": "userId"
